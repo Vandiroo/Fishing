@@ -1,0 +1,26 @@
+import pyautogui
+import keyboard
+from time import sleep
+
+width, height= pyautogui.size() #screenres
+screen_center = ( (width)/2 ,(height)/2 )
+
+def check_for_fish():
+    print('Start fishing')
+    pyautogui.press('e')
+    sleep(3)
+    while 1:
+        if pyautogui.pixelMatchesColor(int((width0.4989)), int((height0.4425)), (239, 199, 129), tolerance=30): 
+            print('Found fish')
+            pyautogui.press('e') 
+            sleep(7)
+            return None
+
+
+i = 0
+while 1:
+    if keyboard.is_pressed('v'):
+        while 1:
+            check_for_fish()
+            i = i + 1
+            print('Iteration n:' + str(i))
